@@ -69,3 +69,17 @@ p {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.works_img{
+  margin: 0;
+  padding: 16px;
+  display: flex;
+}
+
+.languajes{
+  display: flex;
+  flex-direction:row ;
+  padding: 4px 12px;
+  justify-items: auto;
+  background: #EBEBFF;
+  border-radius: 8px;
+}
