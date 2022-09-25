@@ -158,12 +158,21 @@ p {
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .lang_skill {
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
+  color: #6070ff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
 }
 
 .button {
@@ -308,6 +317,7 @@ p {
   flex-direction: column;
   gap: 12px;
   padding: 12px;
+  margin: 0;
 }
 
 .about_skill {
