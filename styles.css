@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  background: #e5e5e5;
 }
 
 html {
@@ -15,6 +16,7 @@ html {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  text-decoration: none;
 }
 
 nav {
@@ -23,6 +25,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 24px 10px 24px;
+  background-color: #fff;
 }
 
 .header_title {
@@ -35,7 +38,12 @@ nav {
 }
 
 .final_msj {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   color: #7f8cff;
+  text-decoration: none;
   margin: 0;
 }
 
@@ -68,4 +76,238 @@ p {
   background-image: url("./image/header_bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 80px;
+}
+
+/* ************************ */
+
+/* works */
+.works {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  padding: 114px 24px 114px 24px;
+  gap: 88px;
+}
+
+.works_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.works_img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.works_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 0;
+}
+
+.works_options {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin: 0;
+  gap: 12px;
+}
+
+.works_list1 {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.works_list {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.works_parragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang_skill {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.button {
+  padding: 12px;
+  margin: 24px 0;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* About Myself */
+.about_myself {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 114px 24px 114px 24px;
+  gap: 12px;
+  border-top-right-radius: 80px;
+}
+
+.about_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 0;
+}
+
+.about_parragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.final_msj2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
+  margin: 0 0 4px 0;
+}
+
+.about_list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.about_icon {
+  padding: 8px;
+}
+
+.button2 {
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.about_group {
+  width: 100%;
+}
+
+.lang_tech {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 26px 24px 12px;
+}
+
+.lang_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.lang_arrow {
+  width: 40px;
+  height: 40px;
+}
+
+.border {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.about_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+.about_skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.about_img {
+  width: 48px;
+  height: 48px;
+  padding: 9px 16px 9px 12px;
+}
+
+.about_lang {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin: 0;
 }
