@@ -223,6 +223,8 @@ p {
   background: #6070ff;
   box-shadow: 0 0.8rem 1.6rem rgba(64, 83, 252, 0.24);
   color: #fff;
+  transform: rotate(360deg);
+  transition: ease 4s;
 }
 
 .button:active {
@@ -490,7 +492,7 @@ p {
   border: 0.1rem solid #fff;
   color: #fff;
   transform: rotate(360deg);
-  transition: ease 3s;
+  transition: ease 4s;
 }
 
 .button-form:active {
