@@ -1,13 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Deploy website
-<<<<<<< HEAD
 
 > You can found my website here:
  https://m1rn4.github.io/Set-up-adn-mobile-first/
-=======
-> You can found my website here: https://m1rn4.github.io/Set-up-adn-mobile-first/
->>>>>>> dd72854238f3bef44c36c4866547ffd9019889ad
+
 
 # Project Name
 
