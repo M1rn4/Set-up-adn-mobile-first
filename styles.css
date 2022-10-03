@@ -13,6 +13,7 @@ html {
 
 body {
   background: #e5e5e5;
+  
 }
 
 .logo {
@@ -242,6 +243,7 @@ p {
   padding: 11.4rem 2.4rem 11.4rem 2.4rem;
   gap: 1.2rem;
   border-top-right-radius: 8rem;
+  
 }
 
 .top {
@@ -444,8 +446,6 @@ p {
 }
 
 .formInput {
-  margin: 0;
-  padding: 0;
   background: #fff;
   border: 0.1rem solid #cfd8dc;
   border-radius: 0.4rem;
@@ -454,7 +454,7 @@ p {
   font-size: 1.7rem;
   line-height: 2rem;
   color: #172b4d;
-  width: 44.7rem;
+  width:100%;
   height: 4.8rem;
 }
 
