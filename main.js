@@ -1,4 +1,8 @@
 // eslint-disable-next-line no-unused-vars
+function closewindows() {
+  const navbarOptions = document.querySelector('#navbar-options');
+  return navbarOptions.classList.replace('menu-mobile', 'nav-menu');
+}
 const openmenu = document.querySelector('#button-hamburger');
 openmenu.addEventListener('click', () => {
   const navbarOptions = document.querySelector('#navbar-options');
@@ -9,24 +13,20 @@ openmenu.addEventListener('click', () => {
 
 const closemenu = document.querySelector('#x');
 closemenu.addEventListener('click', () => {
-  const navbarOptions = document.querySelector('#navbar-options');
-  navbarOptions.classList.replace('menu-mobile', 'nav-menu');
+  closewindows();
 });
 
 const closeLinkP = document.querySelector('#links-p');
 closeLinkP.addEventListener('click', () => {
-  const navbarOptions = document.querySelector('#navbar-options');
-  navbarOptions.classList.replace('menu-mobile', 'nav-menu');
+  closewindows();
 });
 
 const closeLinkA = document.querySelector('#links-a');
 closeLinkA.addEventListener('click', () => {
-  const navbarOptions = document.querySelector('#navbar-options');
-  navbarOptions.classList.replace('menu-mobile', 'nav-menu');
+  closewindows();
 });
 
 const closeLinkC = document.querySelector('#links-c');
 closeLinkC.addEventListener('click', () => {
-  const navbarOptions = document.querySelector('#navbar-options');
-  navbarOptions.classList.replace('menu-mobile', 'nav-menu');
+  closewindows();
 });
