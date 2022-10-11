@@ -515,6 +515,7 @@ p {
   mix-blend-mode: multiply;
   backdrop-filter: blur(10px);
 }
+
 .menu-mobile a {
   font-weight: 600;
   font-size: 32px;
@@ -539,6 +540,6 @@ p {
 .close-icon-visible {
   display: block;
   padding: 38px;
-  align-self: end; 
+  align-self: end;
   color: white;
 }
