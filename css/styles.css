@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #e5e5e5;
+  background: #e5e5e5;  
 }
 
 .logo {
@@ -84,7 +84,6 @@ p {
 .header {
   background: #fff;
   border-bottom-left-radius: 8rem;
-  background-image: url("./img/header-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   display: flex;
@@ -94,7 +93,7 @@ p {
   gap: 1.2rem;
 }
 
-/* ************************ */
+/* ******** */
 
 /* works */
 .works {
@@ -391,7 +390,6 @@ p {
 }
 
 .form {
-  background-image: url("./image/contactbg.png");
   background-color: #6070ff;
   background-position: top right;
   background-size: 55%;
@@ -542,3 +540,150 @@ p {
   align-self: end;
   color: white;
 }
+
+.popup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  
+  position: fixed;
+  width: 343px;
+  height: 713px;
+  left: calc(50% - 343px/2);
+  top: 60px;
+  
+  /* Neutrals/N0 */
+  
+  background: #FFFFFF;
+  /* Neutrals/N40 */
+  
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  
+}
+
+  .modal-container {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(128, 128, 128, 0.9);
+    overflow: scroll;
+    z-index: 3;
+    
+  }
+
+  .modal-container .desc {
+    padding-bottom: 30px;
+  }
+
+  .modal-container .img-container img {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .btn-modal {
+    font-size: 12px;
+    border: 1px solid #2230d2;
+    color: #2230d2;
+    padding: 1.2rem .3rem 1.2rem .3rem;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-modal:last-child {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .live,
+  .source {
+    justify-content: center;
+    width:max-content;
+    text-decoration: none;
+  }
+
+  .source-box {
+    width: 31.1rem;
+    height: 5.6rem;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links {
+    text-decoration: none;
+  }
+
+  .header-modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 1.2rem;
+    width: 31.1rem;
+    height: 4rem;
+  }
+  
+  .works_card_modal{
+    border: 0.1rem solid #dfe1e6;
+    border-radius: 1.6rem;
+    background-color: #fff;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    position: absolute;
+    width: 34.3rem;
+    height: 71.3rem;
+    left: calc(50% - 34.3rem/2);
+    top: 6.0px;
+  }
+
+  .sub-works_card-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1.2px;
+    
+    width: 31.1rem;
+    height: 8.4rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    gap: 1.2rem;
+    width: 23.6rem;
+    height: 3.2rem;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .images{
+    width: 31.1rem;
+    height: 22.0rem;
+  }
+
+  .works_parragraph_modal{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #344563;
+    margin-top: 2rem;
+  }
