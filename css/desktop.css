@@ -274,12 +274,12 @@ nav {
   position: absolute;
   width: 1108px;
   height: 586px;
-  left: calc(50% - 1108px /2);
+  left: calc(50% - 1108px / 2);
   top: 136px;
   border-radius: 8px;
 }
 
-.works_parragraph_modal{
+.works_parragraph_modal {
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
