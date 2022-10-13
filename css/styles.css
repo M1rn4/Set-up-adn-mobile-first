@@ -575,7 +575,12 @@ p {
   margin-right: 8px;
 }
 
-.live,
+.live {
+  justify-content: center;
+  width: max-content;
+  text-decoration: none;
+}
+
 .source {
   justify-content: center;
   width: max-content;

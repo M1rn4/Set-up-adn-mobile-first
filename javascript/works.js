@@ -12,7 +12,7 @@ const works = [
     image_desktop: './image/desktop/card1.png',
     image_description: 'My first project',
     desktopImage: './images/projects/musicFestival.png',
-    languages: ['html', 'css', 'javascript'],
+    tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Boopstrap'],
     button: 'See Project',
     liveURL: '#',
     sourceURL: 'https://github.com/M1rn4/Set-up-adn-mobile-first',
@@ -29,7 +29,7 @@ const works = [
     image_desktop: './image/desktop/card2.png',
     image_description: 'My second project',
     desktopImage: './images/projects/musicFestival.png',
-    languages: ['html', 'css', 'javascript'],
+    tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Boopstrap'],
     button: 'See Project',
     liveURL: '#',
     sourceURL: 'https://github.com/M1rn4/Set-up-adn-mobile-first',
@@ -46,7 +46,7 @@ const works = [
     image_desktop: './image/desktop/card3.png',
     image_description: 'My third project',
     desktopImage: './images/projects/musicFestival.png',
-    languages: ['html', 'css', 'javascript'],
+    tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Boopstrap'],
     button: 'See Project',
     liveURL: '#',
     sourceURL: 'https://github.com/M1rn4/Set-up-adn-mobile-first',
@@ -63,7 +63,7 @@ const works = [
     image_desktop: './image/desktop/card4.png',
     desktopImage: './images/projects/musicFestival.png',
     image_description: 'My fourth project',
-    languages: ['html', 'css', 'javascript'],
+    tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Boopstrap'],
     button: 'See Project',
     liveURL: '#',
     sourceURL: 'https://github.com/M1rn4/Set-up-adn-mobile-first',
@@ -82,16 +82,16 @@ for (const i of works) {
         <h2 class="works_title">${i.title}</h2>
         <ul class="works_options">
           <li><a href="#" class="works_list1">${i.options[0]}</a></li>
-          <li><img class="counter" src="${i.options_img[0]}" alt="" /></li>
+          <li><img class="counter" src="${i.options_img}" alt="" /></li>
           <li><a href="#" class="works_list">${i.options[1]}</a></li>
           <li><img class="counter" src="${i.options_img}" alt="" /></li>
           <li><a href="#" class="works_list">${i.options[2]}</a></li>
         </ul>
         <p class="works_parragraph">${i.description}</p>
         <ul class="languages">
-          <li class="lang_skill">${i.languages[0]}</li>
-          <li class="lang_skill">${i.languages[1]}</li>
-          <li class="lang_skill">${i.languages[2]}</li>
+          <li class="lang_skill">${i.tech[0]}</li>
+          <li class="lang_skill">${i.tech[1]}</li>
+          <li class="lang_skill">${i.tech[2]}</li>
         </ul>
         <a href="#" class="button" id=${i.id - 1}>${i.button}</a>
       </div>
@@ -118,15 +118,15 @@ for (const index of modalButton) {
         <div class="sub-works_card-modal_1">
           <div class= "header-modal">
             <h2 class="works_title">${works[pos].title}</h2>
-            <a href="#" class="links">X</a>
+            <a href="#" class="links" id ="x2">X</a>
         </div>
-        <div class="works_options_modal">
-          <ul class="ul">
-            <li>${works[pos].options[0]}</li>
+        <div>
+          <ul class="works_options" id="works_options_id">
+            <li><a href="#" class="works_list1">${works[pos].options[0]}</a></li>
             <li><img class="counter" src="${works[pos].options_img}" alt="" /></li>
-            <li>${works[pos].options[1]}</li>
+            <li><a href="#" class="works_list">${works[pos].options[1]}</a></li>
             <li><img class="counter" src="${works[pos].options_img}" alt="" /></li>
-            <li>${works[pos].options[2]}</li>
+            <li><a href="#" class="works_list">${works[pos].options[2]}</a></li>
           </ul>
         </div>
       </div>
@@ -138,9 +138,9 @@ for (const index of modalButton) {
         <div>
           <p class="works_parragraph_modal">${works[pos].description_modal_mobile}</p>
           <ul class="languages">
-            <li class="lang_skill">${works[pos].languages[0]}</li>
-            <li class="lang_skill">${works[pos].languages[1]}</li>
-            <li class="lang_skill">${works[pos].languages[2]}</li>
+            <li class="lang_skill">${works[pos].tech[0]}</li>
+            <li class="lang_skill">${works[pos].tech[1]}</li>
+            <li class="lang_skill">${works[pos].tech[2]}</li>
           </ul>
         </div>
         <div class="source-box">
@@ -155,9 +155,14 @@ for (const index of modalButton) {
         <div class= "other">
           <div>
             <ul class="languages">
-              <li class="lang_skill">${works[pos].languages[0]}</li>
-              <li class="lang_skill">${works[pos].languages[1]}</li>
-              <li class="lang_skill">${works[pos].languages[2]}</li>
+              <li class="lang_skill">${works[pos].tech[0]}</li>
+              <li class="lang_skill">${works[pos].tech[1]}</li>
+              <li class="lang_skill">${works[pos].tech[2]}</li>
+            </ul>
+            <ul class="languages">
+              <li class="lang_skill">${works[pos].tech[3]}</li>
+              <li class="lang_skill">${works[pos].tech[4]}</li>
+              <li class="lang_skill">${works[pos].tech[5]}</li>
             </ul>
           </div>
           <div class="source-box">
@@ -168,8 +173,7 @@ for (const index of modalButton) {
       </div>        
     </div>   
     `;
-    const closeIcon = document.querySelector('#x');
+    const closeIcon = document.querySelector('#x2');
     closeIcon.addEventListener('click', close);
-    modal.addEventListener('click', close);
   });
 }
