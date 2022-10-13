@@ -70,20 +70,22 @@
         <div class="form">
             <h2 class="form-title">Contact me</h2>
             <p class="form-parragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
-          <form class="form-form" action="https://formspree.io/f/xlevbkay" method="post">
+          <form class="form-form" action="https://formspree.io/f/xlevbkay" method="post" onsubmit="return formSubmit();">
             <ul class="ul-form">
-              <label for="name" hidden="hidden" >Name</label>
+              <label for="names" hidden="hidden" >Name</label>
               <input class="formInput"
                 type="text"
                 name="name"
                 placeholder="   Alexandra Loremipsum"
                 maxlength="30"
+                id="names"
                 required
                 />
-              <label for="email" hidden="hidden">Email</label>
+              <label for="emails" hidden="hidden">Email</label>
               <input class="formInput"
                   type="email"
                   name="email"
+                  id="emails"
                   placeholder="   alexandra@gmail.com"
                   required
               />
@@ -96,17 +98,18 @@
                   placeholder="   Write your message here"
                   required
               ></textarea>
-
             </ul>
+            <p class="error">The email should be lower case</p>
             <button class="button-form" type="submit">Get in touch</button>
           </form>
         </div>
       </section>
     </main>   
-    <script src="./javaScript/mobile-menu.js""></script>
+    <script src="./javaScript/mobile-menu.js"></script>
     <!-- <script src="./javaScript/popup.js"></script>
      -->
     <div class="modal-container"> </div>
     <script src="./javascript/works.js"></script>
+    <script src="./javascript/simple_validation.js"></script>
   </body>
 </html>
