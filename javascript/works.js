@@ -4,6 +4,8 @@ const works = [
     id: '1',
     title: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    description_modal_desktop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description_modal_mobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     options: ['CANOPY ', 'Back End Dev', '2015'],
     options_img: './image/Counter.png',
     image_mobile: './image/works_1.png',
@@ -19,6 +21,8 @@ const works = [
     id: '2',
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    description_modal_desktop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description_modal_mobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     options: ['CANOPY ', 'Back End Dev', '2015'],
     options_img: './image/Counter.png',
     image_mobile: './image/works_2.png',
@@ -34,6 +38,8 @@ const works = [
     id: '3',
     title: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    description_modal_desktop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description_modal_mobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     options: ['CANOPY ', 'Back End Dev', '2015'],
     options_img: './image/Counter.png',
     image_mobile: './image/works_3.png',
@@ -49,6 +55,8 @@ const works = [
     id: '4',
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    description_modal_desktop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description_modal_mobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     options: ['CANOPY ', 'Back End Dev', '2015'],
     options_img: './image/Counter.png',
     image_mobile: './image/works_4.png',
@@ -94,21 +102,20 @@ for (const i of works) {
 const modalButton = document.querySelectorAll('.button');
 const modal = document.querySelector('.modal-container');
 // eslint-disable-next-line no-console
+function close() {
+  modal.style.display = 'none';
+}
 
 // eslint-disable-next-line no-restricted-syntax
 for (const index of modalButton) {
   // eslint-disable-next-line no-loop-func
   index.addEventListener('click', (e) => {
     const pos = e.target.getAttribute('id');
-    // eslint-disable-next-line no-console
-    console.log(pos);
-
     modal.style.display = 'block';
-
     modal.innerHTML = `
     <div class= "works_card_modal">
       <div>
-        <div class="sub-works_card-modal">
+        <div class="sub-works_card-modal_1">
           <div class= "header-modal">
             <h2 class="works_title">${works[pos].title}</h2>
             <a href="#" class="links">X</a>
@@ -125,11 +132,11 @@ for (const index of modalButton) {
       </div>
       <div class="images">
         <img class="works_img" src="${works[pos].image_mobile}" alt="${works[pos].image_description}" />
-        <img class="works_img_desktop" src="${works[pos].image_desktop}" alt="${works[pos].image_description}">
+        <img class="works_img_desktop" id="works_img_modal_desktop" src="${works[pos].image_desktop}" alt="${works[pos].image_description}">
       </div>      
-      <div class = "sub-works_card">
+      <div class = "sub-works_card_modal">
         <div>
-          <p class="works_parragraph_modal">${works[pos].description}</p>
+          <p class="works_parragraph_modal">${works[pos].description_modal_mobile}</p>
           <ul class="languages">
             <li class="lang_skill">${works[pos].languages[0]}</li>
             <li class="lang_skill">${works[pos].languages[1]}</li>
@@ -141,9 +148,28 @@ for (const index of modalButton) {
           <a href="${works[pos].sourceURL}" class="btn-modal source">See Source<img src="./image/modal/source.svg" alt="source image"></a>
         </div>
       </div>
+      <div class = "sub-works_card_modal_2">
+        <div>
+          <p  class="works_parragraph_modal">${works[pos].description_modal_desktop}</p>
+        </div>
+        <div class= "other">
+          <div>
+            <ul class="languages">
+              <li class="lang_skill">${works[pos].languages[0]}</li>
+              <li class="lang_skill">${works[pos].languages[1]}</li>
+              <li class="lang_skill">${works[pos].languages[2]}</li>
+            </ul>
+          </div>
+          <div class="source-box">
+            <a href="${works[pos].liveURL}" class="btn-modal live">See live<img src="./image/modal/live.svg" alt="live image"></a>
+            <a href="${works[pos].sourceURL}" class="btn-modal source">See Source<img src="./image/modal/source.svg" alt="source image"></a>
+          </div>
+        </div>
+      </div>        
     </div>   
     `;
     const closeIcon = document.querySelector('#x');
-    closeIcon.classList.toggle('close-icon-visible');
+    closeIcon.addEventListener('click', close);
+    modal.addEventListener('click', close);
   });
 }

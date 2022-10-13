@@ -93,10 +93,8 @@ nav {
   display: block;
 }
 
-.sub-works_card {
-  display: flex;
-  padding: 2.4rem;
-  gap: 2.4rem;
+.sub-works_card_modal {
+  display: none;
 }
 
 .works_title {
@@ -200,29 +198,36 @@ nav {
   position: relative;
 }
 
+.source-box {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-container .tech {
   padding-bottom: 10px;
   width: 230px;
 }
 
 .btn-modal {
-  flex: auto;
-  font-family: Poppins, sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: center;
-}
-
-.source-box {
-  width: 350px;
-  margin-top: 10px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 25px;
+  position: relative;
+  width: 14.2rem;
+  height: 4rem;
+  left: 0.5rem;
+  bottom: 1.6rem;
+  border: 0.1rem solid #6070ff;
+  border-radius: 0.8rem;
+  justify-content: space-between;
 }
 
 .modal-container .source-box {
   border-top: 0.2px solid rgb(94, 94, 94, 0.2);
-  padding-top: 30px;
+  padding-top: 3rem;
 }
 
 .base {
@@ -243,47 +248,104 @@ nav {
   position: absolute;
   width: 115.6rem;
   height: 116.3rem;
-  left: 14.2rem;
+  left: 9.3rem;
   top: 7.7rem;
 }
 
 .sub-works_card-modal {
+  display: none;
+}
+
+.sub-works_card-modal_1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0;
   gap: 12px;
-  top: 0;
   position: absolute;
+  width: 1108px;
+  height: 84px;
+  left: 24px;
+  top: 24px;
 }
 
 .ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
   padding: 0;
-  gap: 1.2rem;
-  width: 23.6rem;
-  height: 3.2rem;
-  order: 1;
-  flex-grow: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .images {
   position: absolute;
-  width: 1108px;
-  height: 586px;
-  left: calc(50% - 1108px / 2);
-  top: 136px;
-  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  left: calc(50% - 110.8rem / 2);
+  top: 13.6rem;
+  border-radius: 0.8rem;
 }
 
 .works_parragraph_modal {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.4rem;
-  color: #344563;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  position: absolute;
+  width: 778px;
+  height: fit-content;
+  left: 12px;
+  top: 781px;
+}
+
+.header-modal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 1108px;
+  height: 40px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  position: absolute;
+  width: 306px;
+  height: 157px;
+  right: 24px;
+  top: 781px;
+}
+
+.works_options_modal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 260px;
+  height: 36px;
+  flex: none;
+}
+
+.sub-works_card_modal_2 {
+  display: block;
+}
+
+#works_img_modal_desktop {
+  position: absolute;
+  width: 100.8rem;
+  height: 58.6rem;
+  left: 0;
+  top: 0;
 }
