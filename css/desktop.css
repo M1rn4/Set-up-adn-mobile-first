@@ -68,7 +68,7 @@ nav {
 
 .works_options {
   display: flex;
-  justify-content:left;
+  justify-content: left;
 }
 
 .works_card {
@@ -248,7 +248,7 @@ nav {
 
 .works_card_modal {
   position: absolute;
-  width:90vw;
+  width: 90vw;
   height: 116.3rem;
   margin: 8rem 7.7rem 8rem 7.7rem;
   left: 0;
@@ -276,7 +276,7 @@ nav {
 .ul {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   padding: 0;
   margin-top: 2rem;
