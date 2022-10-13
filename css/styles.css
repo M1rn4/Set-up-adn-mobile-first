@@ -670,3 +670,8 @@ p {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.error {
+  display: none;
+  color: #000;
+}
