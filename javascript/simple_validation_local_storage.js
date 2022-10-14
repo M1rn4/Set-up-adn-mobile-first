@@ -7,9 +7,9 @@ function formSubmit() {
   if (!regex.test(email)) {
     errorMessage.style.display = 'block';
     errorMessage.innerHTML = 'The email should only content lowercase letters';
-    return ('false');
+    return (false);
   }
-  return ('true');
+  return (true);
 }
 
 const form = document.querySelector('.form-form');
