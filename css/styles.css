@@ -673,5 +673,10 @@ p {
 
 .error {
   display: none;
-  color: #000;
+  color: red;
+}
+
+.text-input,
+.email-input {
+  padding: 10px 0;
 }

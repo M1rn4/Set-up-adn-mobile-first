@@ -73,7 +73,7 @@
           <form class="form-form" action="https://formspree.io/f/xlevbkay" method="post" onsubmit="return formSubmit();">
             <ul class="ul-form">
               <label for="names" hidden="hidden" >Name</label>
-              <input class="formInput"
+              <input class="text-input"
                 type="text"
                 name="name"
                 placeholder="   Alexandra Loremipsum"
@@ -82,7 +82,7 @@
                 required
                 />
               <label for="emails" hidden="hidden">Email</label>
-              <input class="formInput"
+              <input class="email-input"
                   type="email"
                   name="email"
                   id="emails"
@@ -90,11 +90,12 @@
                   required
               />
               <label for="message" hidden="hidden">Message</label>
-              <textarea class="formArea"
+              <textarea class="textarea"
                   type="text"
                   name="message"
-                  rows="5"
-                  maxlength=""
+                  rows="10"
+                  cols="30"
+                  maxlength="500"
                   placeholder="   Write your message here"
                   required
               ></textarea>
@@ -105,11 +106,11 @@
         </div>
       </section>
     </main>   
-    <script src="./javaScript/mobile-menu.js"></script>
+    <script src="./javascript/mobile-menu.js"></script>
     <!-- <script src="./javaScript/popup.js"></script>
      -->
     <div class="modal-container"> </div>
     <script src="./javascript/works.js"></script>
-    <script src="./javascript/simple_validation.js"></script>
+    <script src="./javascript/simple_validation_local_storage.js""></script>
   </body>
 </html>
