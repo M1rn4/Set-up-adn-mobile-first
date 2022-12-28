@@ -8,11 +8,12 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%;  
 }
 
 body {
   background: #e5e5e5;
+  width: 95vw;
 }
 
 .logo {
@@ -111,6 +112,7 @@ p {
   padding: 1.6rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1.2rem;
 }
@@ -429,7 +431,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 70vw;
   gap: 1.2rem;
 }
 
@@ -439,6 +441,7 @@ p {
   flex-direction: column;
   justify-items: center;
   gap: 2rem;
+  width: 70vw;
 }
 
 .formInput {
@@ -450,7 +453,7 @@ p {
   font-size: 1.7rem;
   line-height: 2rem;
   color: #172b4d;
-  width: 100%;
+  width: 70vw;
   height: 4.8rem;
 }
 

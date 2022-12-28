@@ -1,5 +1,8 @@
+body {
+  width: 100vw;
+}
 nav {
-  padding: 0 14.3rem 4.8rem 14.3rem;
+  padding: 2.5rem 14.3rem 4.8rem 14.3rem;
 }
 
 .hamburger {
@@ -36,8 +39,9 @@ nav {
 
 .header {
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding: 28.9rem 15% 28.9rem 15%;
+  background-size: 80%;
+  padding: 28.9rem  28.9rem 15%;
+  justify-self: start;
 }
 
 .headerTitle {
@@ -57,12 +61,7 @@ nav {
   color: #344563;
 }
 
-.space {
-  display: block;
-}
-
 .works {
-  padding: 14.2rem;
   gap: 14.2rem;
 }
 
@@ -75,7 +74,7 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 2.2rem;
-  padding: 2.4rem;
+
 }
 
 .works_card-1 {
@@ -91,6 +90,7 @@ nav {
 
 .works_img_desktop {
   display: block;
+  width: 60vw;
 }
 
 .sub-works_card_modal {
