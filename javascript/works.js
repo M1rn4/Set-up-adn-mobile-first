@@ -17,7 +17,7 @@ const works = [
     liveURL: 'https://m1rn4.github.io/Sales-Page/',
     sourceURL: 'https://github.com/M1rn4/Set-up-adn-mobile-first',
   },
-    {
+  {
     id: '2',
     title: 'Conference Page',
     description: 'This page was designed for a conference presentation. ',
@@ -68,7 +68,6 @@ const works = [
     liveURL: 'https://m1rn4.github.io/awesome_book_es6/',
     sourceURL: 'https://github.com/M1rn4/awesome_book_es6',
   },
-
 
   {
     id: '5',

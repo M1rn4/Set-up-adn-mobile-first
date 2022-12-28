@@ -1,6 +1,7 @@
 body {
   width: 100vw;
 }
+
 nav {
   padding: 2.5rem 14.3rem 4.8rem 14.3rem;
 }
@@ -74,7 +75,6 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 2.2rem;
-
 }
 
 .works_card-1 {
